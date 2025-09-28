@@ -1,523 +1,517 @@
-diff --git a/index.html b/index.html
-index 8b137891791fe96927ad78e64b0aad7bded08bdc..2e7ceba402ce23fe9e4fd4ae99ac8f1edef02f03 100644
---- a/index.html
-+++ b/index.html
-@@ -1 +1,517 @@
-+<!DOCTYPE html>
-+<html lang="ja">
-+<head>
-+  <meta charset="utf-8">
-+  <meta name="viewport" content="width=device-width, initial-scale=1">
-+  <title>{{CLINIC_NAME}}｜痛みの少ない治療・夜20時まで・{{STATION_NAME}}徒歩{{STATION_TIME}}分｜{{AREA_NAME}}の歯医者</title>
-+  <meta name="description" content="平日20時まで診療の{{CLINIC_NAME}}は{{AREA_NAME}}で痛みの少ない治療に注力。滅菌対策とキッズ対応で家族みんなが安心。LINEで24時間予約受付中。">
-+  <link rel="canonical" href="{{CANONICAL_URL}}">
-+  <meta property="og:type" content="website">
-+  <meta property="og:title" content="{{CLINIC_NAME}}｜痛みの少ない治療・夜20時まで">
-+  <meta property="og:description" content="{{AREA_NAME}}の歯医者{{CLINIC_NAME}}。痛みの少ない治療・夜20時まで診療・キッズスペース完備。LINEで24時間予約受付中。">
-+  <meta property="og:url" content="{{CANONICAL_URL}}">
-+  <meta property="og:image" content="{{OG_IMAGE_URL}}">
-+  <meta name="twitter:card" content="summary_large_image">
-+  <meta name="twitter:title" content="{{CLINIC_NAME}}｜痛みの少ない治療・夜20時まで">
-+  <meta name="twitter:description" content="{{AREA_NAME}}の歯医者{{CLINIC_NAME}}。痛みの少ない治療・夜20時まで診療・キッズスペース完備。LINEで24時間予約受付中。">
-+  <meta name="twitter:image" content="{{OG_IMAGE_URL}}">
-+  <meta name="theme-color" content="#2AA7A1">
-+  <link rel="stylesheet" href="assets/css/styles.css">
-+</head>
-+<body>
-+  <a class="skip-link" href="#main">本文へスキップ</a>
-+  <header class="header" id="top">
-+    <div class="header__inner">
-+      <a class="header__logo" href="#top">{{CLINIC_NAME}}</a>
-+      <div class="header__contact">
-+        <a class="header__tel" href="tel:{{PHONE_NUMBER_DIGITS}}">{{PHONE_NUMBER}}</a>
-+        <a class="btn btn--primary btn--small" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約</a>
-+      </div>
-+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="ナビゲーションを開閉" />
-+      <label class="nav-toggle__label" for="nav-toggle">
-+        <span class="nav-toggle__icon" aria-hidden="true"></span>
-+        <span class="sr-only">メニューを開閉</span>
-+      </label>
-+      <nav class="nav" id="global-nav" aria-label="メインメニュー">
-+        <ul class="nav__list">
-+          <li class="nav__item"><a href="#about">選ばれる理由</a></li>
-+          <li class="nav__item"><a href="#services">診療案内</a></li>
-+          <li class="nav__item"><a href="#prices">料金</a></li>
-+          <li class="nav__item"><a href="#doctors">医師紹介</a></li>
-+          <li class="nav__item"><a href="#voices">患者さまの声</a></li>
-+          <li class="nav__item"><a href="#faq">よくある質問</a></li>
-+          <li class="nav__item"><a href="#access">アクセス</a></li>
-+          <li class="nav__item"><a href="#contact">お問い合わせ</a></li>
-+        </ul>
-+      </nav>
-+    </div>
-+  </header>
- 
-+  <main id="main">
-+    <section class="hero" aria-labelledby="hero-title">
-+      <div class="hero__inner">
-+        <div class="hero__content">
-+          <p class="hero__tagline">“痛みの少ない” に本気です。</p>
-+          <h1 class="hero__title" id="hero-title">痛みの少ない治療で、通いやすく。{{CLINIC_NAME}}</h1>
-+          <p class="hero__subtitle">平日20時まで／土曜診療／キッズスペースあり／急患対応</p>
-+          <div class="hero__ctas">
-+            <a class="btn btn--primary" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約（24時間OK）</a>
-+            <a class="btn btn--secondary" href="tel:{{PHONE_NUMBER_DIGITS}}">電話で相談</a>
-+          </div>
-+          <ul class="hero__benefits" aria-label="受診するメリット">
-+            <li class="hero__benefit">痛みの少ない治療</li>
-+            <li class="hero__benefit">短時間＆待ち時間に配慮</li>
-+            <li class="hero__benefit">徹底した衛生管理</li>
-+          </ul>
-+        </div>
-+        <div class="hero__media">
-+          <img class="hero__image" src="assets/img/hero.jpg" alt="明るい院内の受付カウンター" loading="lazy">
-+          <div class="hero__qr">
-+            <img src="assets/img/line-qr.png" alt="LINE予約用QRコード" loading="lazy">
-+            <p class="hero__qr-text">スマホで簡単予約</p>
-+          </div>
-+        </div>
-+      </div>
-+    </section>
-+
-+    <section class="cta-block" aria-labelledby="cta-block-title">
-+      <div class="container">
-+        <h2 class="section__title" id="cta-block-title">今すぐLINEで24時間予約受付中</h2>
-+        <p class="section__lead">初診も再診も、24時間いつでもLINEからかんたん予約。チャットで事前相談も承ります。</p>
-+        <a class="btn btn--primary btn--large" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約（24時間OK）</a>
-+      </div>
-+    </section>
-+
-+    <section class="section section--about" id="about" aria-labelledby="about-title">
-+      <div class="container">
-+        <h2 class="section__title" id="about-title">{{CLINIC_NAME}}が選ばれる6つの理由</h2>
-+        <div class="features">
-+          <article class="feature">
-+            <h3 class="feature__title">痛みの少ない治療に注力</h3>
-+            <p class="feature__text">表面麻酔や電動麻酔器などを活用し、痛みの少ない治療を実現。恐怖心の強い方も安心して通院いただけます。</p>
-+          </article>
-+          <article class="feature">
-+            <h3 class="feature__title">ていねいなカウンセリング</h3>
-+            <p class="feature__text">口腔内カメラや資料を使ったわかりやすい説明で、治療前後の不安を丁寧に解消いたします。</p>
-+          </article>
-+          <article class="feature">
-+            <h3 class="feature__title">通いやすい立地・時間</h3>
-+            <p class="feature__text">{{STATION_NAME}}から徒歩{{STATION_TIME}}分、平日20時まで・土曜診療で、お仕事帰りや学校帰りでも通いやすい環境です。</p>
-+          </article>
-+          <article class="feature">
-+            <h3 class="feature__title">滅菌・衛生管理の徹底</h3>
-+            <p class="feature__text">クラスB滅菌器や医療用空気清浄機を導入し、治療器具は患者さまごとに徹底滅菌しています。</p>
-+          </article>
-+          <article class="feature">
-+            <h3 class="feature__title">キッズ・ファミリー歓迎</h3>
-+            <p class="feature__text">キッズスペース完備で、ベビーカーでもそのまま入れるバリアフリー設計。親子で安心して通院いただけます。</p>
-+          </article>
-+          <article class="feature">
-+            <h3 class="feature__title">保険診療中心で費用が明確</h3>
-+            <p class="feature__text">保険診療を中心に、費用は事前に明確化。自費診療もお見積りとお支払い方法をご案内します。</p>
-+          </article>
-+        </div>
-+      </div>
-+    </section>
-+
-+    <section class="section section--services" id="services" aria-labelledby="services-title">
-+      <div class="container">
-+        <h2 class="section__title" id="services-title">診療メニュー</h2>
-+        <div class="cards cards--services">
-+          <article class="card card--service">
-+            <h3 class="card__title">一般歯科</h3>
-+            <p class="card__text">むし歯・歯周病の治療や根管治療など、痛みを抑えた丁寧な処置を行います。</p>
-+            <p class="card__meta">保険適用／費用目安：{{PRICE_GENERAL}}</p>
-+            <a class="btn btn--primary btn--block" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約</a>
-+          </article>
-+          <article class="card card--service">
-+            <h3 class="card__title">予防歯科</h3>
-+            <p class="card__text">定期検診、クリーニング、フッ素塗布でむし歯・歯周病の予防をサポートします。</p>
-+            <p class="card__meta">保険適用／費用目安：{{PRICE_PREVENTIVE}}</p>
-+            <a class="btn btn--primary btn--block" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約</a>
-+          </article>
-+          <article class="card card--service">
-+            <h3 class="card__title">小児歯科</h3>
-+            <p class="card__text">お子さまの歯の健康を守るための予防・治療を、怖くない工夫で進めます。</p>
-+            <p class="card__meta">保険適用／費用目安：{{PRICE_PEDIATRIC}}</p>
-+            <a class="btn btn--primary btn--block" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約</a>
-+          </article>
-+          <article class="card card--service">
-+            <h3 class="card__title">矯正歯科</h3>
-+            <p class="card__text">ワイヤー・マウスピース矯正に対応し、ライフスタイルに合わせたプランをご提案。</p>
-+            <p class="card__meta">自費診療／費用目安：{{PRICE_ORTHO}}</p>
-+            <a class="btn btn--primary btn--block" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約</a>
-+          </article>
-+          <article class="card card--service">
-+            <h3 class="card__title">口腔外科</h3>
-+            <p class="card__text">親知らずの抜歯や顎関節症など、専門的な処置にも対応しています。</p>
-+            <p class="card__meta">保険・自費／費用目安：{{PRICE_ORAL_SURGERY}}</p>
-+            <a class="btn btn--primary btn--block" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約</a>
-+          </article>
-+          <article class="card card--service">
-+            <h3 class="card__title">インプラント</h3>
-+            <p class="card__text">CT診断に基づく安全なインプラント治療で、しっかり噛める毎日を実現。</p>
-+            <p class="card__meta">自費診療／費用目安：{{PRICE_IMPLANT}}</p>
-+            <a class="btn btn--primary btn--block" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約</a>
-+          </article>
-+          <article class="card card--service">
-+            <h3 class="card__title">審美・ホワイトニング</h3>
-+            <p class="card__text">ホワイトニングやセラミック治療で、自然で美しい口元をサポートします。</p>
-+            <p class="card__meta">自費診療／費用目安：{{PRICE_ESTHETIC}}</p>
-+            <a class="btn btn--primary btn--block" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約</a>
-+          </article>
-+        </div>
-+      </div>
-+    </section>
-+
-+    <section class="section section--prices" id="prices" aria-labelledby="prices-title">
-+      <div class="container">
-+        <h2 class="section__title" id="prices-title">料金・保険について</h2>
-+        <div class="price-table">
-+          <table>
-+            <caption>保険診療の費用目安（税込）</caption>
-+            <thead>
-+              <tr>
-+                <th scope="col">項目</th>
-+                <th scope="col">内容</th>
-+                <th scope="col">目安料金</th>
-+              </tr>
-+            </thead>
-+            <tbody>
-+              <tr>
-+                <th scope="row">初診料</th>
-+                <td>初回カウンセリング・検査</td>
-+                <td>{{PRICE_FIRST_VISIT}}</td>
-+              </tr>
-+              <tr>
-+                <th scope="row">再診料</th>
-+                <td>経過確認・応急処置</td>
-+                <td>{{PRICE_FOLLOW_UP}}</td>
-+              </tr>
-+              <tr>
-+                <th scope="row">スケーリング</th>
-+                <td>歯石除去・クリーニング</td>
-+                <td>{{PRICE_SCALING}}</td>
-+              </tr>
-+              <tr>
-+                <th scope="row">レントゲン</th>
-+                <td>デジタルレントゲン撮影</td>
-+                <td>{{PRICE_XRAY}}</td>
-+              </tr>
-+            </tbody>
-+          </table>
-+        </div>
-+        <details class="price-details">
-+          <summary>自費診療の料金目安を開く</summary>
-+          <ul class="price-details__list">
-+            <li>ホワイトニング（片顎）：{{PRICE_WHITENING}}</li>
-+            <li>セラミッククラウン：{{PRICE_CERAMIC}}</li>
-+            <li>インプラント（1本）：{{PRICE_IMPLANT_DETAIL}}</li>
-+            <li>マウスピース矯正：{{PRICE_ALIGNER}}</li>
-+          </ul>
-+        </details>
-+        <p class="price-note">※費用は症状や材料により異なります。詳しくは事前にお見積りをご案内します。</p>
-+      </div>
-+    </section>
-+
-+    <section class="section section--facility" id="facility" aria-labelledby="facility-title">
-+      <div class="container">
-+        <h2 class="section__title" id="facility-title">院内設備・衛生管理</h2>
-+        <div class="facility-grid">
-+          <article class="facility-item">
-+            <h3 class="facility-item__title">滅菌体制</h3>
-+            <p class="facility-item__text">クラスB滅菌器、ハンドピース専用滅菌器、口腔外バキュームを導入。器具は患者さまごとに個別包装しています。</p>
-+          </article>
-+          <article class="facility-item">
-+            <h3 class="facility-item__title">使い捨て用品の徹底</h3>
-+            <p class="facility-item__text">エプロン・コップ・グローブなどは使い捨てを徹底し、院内感染防止に努めています。</p>
-+          </article>
-+          <article class="facility-item">
-+            <h3 class="facility-item__title">院内環境</h3>
-+            <p class="facility-item__text">定期的な換気と清掃、医療用空気清浄機でクリーンな空間を保ちます。バリアフリーでベビーカーもOK。</p>
-+          </article>
-+          <article class="facility-item">
-+            <h3 class="facility-item__title">キッズスペース</h3>
-+            <p class="facility-item__text">絵本やおもちゃを備えたキッズスペースを完備し、待ち時間も楽しくお過ごしいただけます。</p>
-+          </article>
-+          <article class="facility-item">
-+            <h3 class="facility-item__title">個室診療</h3>
-+            <p class="facility-item__text">プライバシーに配慮した半個室・個室診療室で、周囲を気にせず治療に集中できます。</p>
-+          </article>
-+          <article class="facility-item">
-+            <h3 class="facility-item__title">バリアフリー対応</h3>
-+            <p class="facility-item__text">院内は段差をなくし、車いすやご高齢の方も安心してお越しいただけます。</p>
-+          </article>
-+        </div>
-+      </div>
-+    </section>
-+
-+    <section class="section section--doctors" id="doctors" aria-labelledby="doctors-title">
-+      <div class="container">
-+        <h2 class="section__title" id="doctors-title">医師・スタッフ紹介</h2>
-+        <div class="doctor">
-+          <div class="doctor__media">
-+            <img src="assets/img/staff-1.jpg" alt="患者さまへ説明を行う院長の写真" loading="lazy">
-+          </div>
-+          <div class="doctor__content">
-+            <h3 class="doctor__name">院長 {{DIRECTOR_NAME}}</h3>
-+            <p class="doctor__profile">{{DIRECTOR_NAME}}は{{UNIVERSITY_NAME}}歯学部卒業後、総合病院歯科口腔外科や都内クリニックにて研鑽を積み、{{YEAR_ESTABLISHED}}年に{{CLINIC_NAME}}を開院。痛みの少ない治療とライフスタイルに寄り添うケアを大切にしています。</p>
-+            <p class="doctor__affiliation">所属学会：日本歯科医師会／日本口腔外科学会／日本小児歯科学会</p>
-+            <p class="doctor__specialty">得意領域：無痛治療、予防歯科、インプラント、審美治療</p>
-+          </div>
-+        </div>
-+      </div>
-+    </section>
-+
-+    <section class="section section--voices" id="voices" aria-labelledby="voices-title">
-+      <div class="container">
-+        <h2 class="section__title" id="voices-title">患者さまの声</h2>
-+        <p class="section__note">※個人の感想であり、効果には個人差があります。</p>
-+        <div class="voices">
-+          <article class="voice">
-+            <h3 class="voice__title">30代 女性</h3>
-+            <p class="voice__rating" aria-label="星5つ中5">★★★★★</p>
-+            <p class="voice__excerpt">麻酔の痛みがほとんどなく、説明も丁寧で安心して治療を受けられました。</p>
-+            <details class="voice__details">
-+              <summary>詳しく読む</summary>
-+              <p>忙しい仕事の合間でも通いやすい診療時間で助かっています。治療計画や費用も事前に説明があり、納得して進めることができました。</p>
-+            </details>
-+          </article>
-+          <article class="voice">
-+            <h3 class="voice__title">40代 男性</h3>
-+            <p class="voice__rating" aria-label="星5つ中4">★★★★☆</p>
-+            <p class="voice__excerpt">院内が清潔で、治療中もこまめに声かけしてくれるので安心できます。</p>
-+            <details class="voice__details">
-+              <summary>詳しく読む</summary>
-+              <p>夜20時まで診療しているので、仕事帰りにも通える点が良いです。LINEで予約できるので待ち時間も少なくて快適です。</p>
-+            </details>
-+          </article>
-+          <article class="voice">
-+            <h3 class="voice__title">20代 女性</h3>
-+            <p class="voice__rating" aria-label="星5つ中5">★★★★★</p>
-+            <p class="voice__excerpt">ホワイトニングの相談で来院。メリットと注意点をしっかり教えてもらえました。</p>
-+            <details class="voice__details">
-+              <summary>詳しく読む</summary>
-+              <p>キッズスペースがあり、妹とも安心して通えました。白くなった歯をキープできるようアドバイスももらえたので満足です。</p>
-+            </details>
-+          </article>
-+        </div>
-+      </div>
-+    </section>
-+
-+    <section class="section section--faq" id="faq" aria-labelledby="faq-title">
-+      <div class="container">
-+        <h2 class="section__title" id="faq-title">よくある質問</h2>
-+        <div class="faq">
-+          <details class="faq__item">
-+            <summary>治療はどのくらい痛いですか？</summary>
-+            <p>表面麻酔や電動麻酔器を使用し、痛みを最小限に抑える取り組みをしています。痛みに不安のある方は遠慮なくご相談ください。</p>
-+          </details>
-+          <details class="faq__item">
-+            <summary>治療時間はどのくらいかかりますか？</summary>
-+            <p>内容によりますが、初診は60分程度、再診は30分程度が目安です。ご希望の時間帯があればLINEからご相談ください。</p>
-+          </details>
-+          <details class="faq__item">
-+            <summary>費用が心配です。見積りはもらえますか？</summary>
-+            <p>保険診療・自費診療ともに、治療前に費用の目安と支払い方法をご案内します。分割払いにも対応可能です。</p>
-+          </details>
-+          <details class="faq__item">
-+            <summary>保険証を忘れた場合はどうなりますか？</summary>
-+            <p>一時的に自費扱いとなりますが、後日保険証をご提示いただければ差額をご返金いたします。</p>
-+          </details>
-+          <details class="faq__item">
-+            <summary>子どもを連れて行っても大丈夫ですか？</summary>
-+            <p>キッズスペースを完備し、ベビーカーのまま診療室に入れるバリアフリー設計です。ご家族皆さまでお越しください。</p>
-+          </details>
-+          <details class="faq__item">
-+            <summary>急患にも対応していますか？</summary>
-+            <p>急な痛みやトラブルにも可能な限り対応いたします。まずはお電話またはLINEでご連絡ください。</p>
-+          </details>
-+        </div>
-+      </div>
-+    </section>
-+
-+    <section class="section section--access" id="access" aria-labelledby="access-title">
-+      <div class="container">
-+        <h2 class="section__title" id="access-title">アクセス・診療時間</h2>
-+        <div class="access">
-+          <div class="access__info">
-+            <p class="access__address">住所：{{ADDRESS}}</p>
-+            <p class="access__transport">最寄り：{{STATION_NAME}}徒歩{{STATION_TIME}}分／{{BUS_INFO}}／駐車場{{PARKING_INFO}}</p>
-+            <a class="btn btn--primary" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約（24時間OK）</a>
-+            <a class="btn btn--secondary" href="tel:{{PHONE_NUMBER_DIGITS}}">電話で相談</a>
-+            <div class="access__qr">
-+              <img src="assets/img/line-qr.png" alt="LINE予約用QRコード" loading="lazy">
-+              <p>スマホから友だち追加</p>
-+            </div>
-+          </div>
-+          <div class="access__map">
-+            <img src="assets/img/map.png" alt="{{CLINIC_NAME}}周辺地図のイメージ" loading="lazy">
-+          </div>
-+        </div>
-+        <div class="timetable">
-+          <table>
-+            <caption>診療時間</caption>
-+            <thead>
-+              <tr>
-+                <th scope="col">曜日</th>
-+                <th scope="col">午前</th>
-+                <th scope="col">午後</th>
-+              </tr>
-+            </thead>
-+            <tbody>
-+              <tr>
-+                <th scope="row">月</th>
-+                <td>09:00〜13:00</td>
-+                <td>14:30〜20:00</td>
-+              </tr>
-+              <tr>
-+                <th scope="row">火</th>
-+                <td>09:00〜13:00</td>
-+                <td>14:30〜20:00</td>
-+              </tr>
-+              <tr>
-+                <th scope="row">水</th>
-+                <td>09:00〜13:00</td>
-+                <td>14:30〜20:00</td>
-+              </tr>
-+              <tr>
-+                <th scope="row">木</th>
-+                <td>09:00〜13:00</td>
-+                <td>14:30〜20:00</td>
-+              </tr>
-+              <tr>
-+                <th scope="row">金</th>
-+                <td>09:00〜13:00</td>
-+                <td>14:30〜20:00</td>
-+              </tr>
-+              <tr>
-+                <th scope="row">土</th>
-+                <td>09:00〜13:00</td>
-+                <td>14:00〜17:00</td>
-+              </tr>
-+              <tr class="timetable__holiday">
-+                <th scope="row">日・祝</th>
-+                <td colspan="2">休診</td>
-+              </tr>
-+            </tbody>
-+          </table>
-+        </div>
-+      </div>
-+    </section>
-+
-+    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
-+      <div class="container">
-+        <h2 class="section__title" id="contact-title">お問い合わせ（WEBフォーム）</h2>
-+        <p class="section__lead">以下のフォームからもご相談を受け付けています。確認のため、必須項目のご入力をお願いします。</p>
-+        <form class="form" action="mailto:info@yourclinic.jp" method="post">
-+          <div class="form__group">
-+            <label for="contact-name">お名前 <span class="form__required" aria-hidden="true">必須</span></label>
-+            <input id="contact-name" name="name" type="text" required>
-+          </div>
-+          <div class="form__group">
-+            <label for="contact-email">メールアドレス <span class="form__required" aria-hidden="true">必須</span></label>
-+            <input id="contact-email" name="email" type="email" required>
-+          </div>
-+          <div class="form__group">
-+            <label for="contact-phone">電話番号 <span class="form__required" aria-hidden="true">必須</span></label>
-+            <input id="contact-phone" name="phone" type="tel" inputmode="tel" required>
-+          </div>
-+          <div class="form__group">
-+            <label for="contact-message">お問い合わせ内容 <span class="form__required" aria-hidden="true">必須</span></label>
-+            <textarea id="contact-message" name="message" rows="5" required></textarea>
-+          </div>
-+          <div class="form__group form__group--checkbox">
-+            <input id="contact-consent" name="consent" type="checkbox" required>
-+            <label for="contact-consent">個人情報の取り扱いに同意します（<a href="#privacy">プライバシーポリシー</a>）</label>
-+          </div>
-+          <button class="btn btn--primary btn--large" type="submit">WEB問合せを送信</button>
-+        </form>
-+      </div>
-+    </section>
-+
-+    <section class="section section--privacy" id="privacy" aria-labelledby="privacy-title">
-+      <div class="container">
-+        <h2 class="section__title" id="privacy-title">プライバシーポリシー</h2>
-+        <p>{{CLINIC_NAME}}（以下、「当院」といいます。）は、個人情報保護法および関連法令を遵守し、患者さまの個人情報を適切に管理いたします。取得した情報は診療およびお問い合わせ対応の目的以外には利用いたしません。</p>
-+      </div>
-+    </section>
-+  </main>
-+
-+  <div class="cta-fixed" role="complementary" aria-label="固定の予約案内">
-+    <a class="btn btn--primary" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約（24時間OK）</a>
-+    <a class="btn btn--secondary" href="tel:{{PHONE_NUMBER_DIGITS}}">電話で相談</a>
-+  </div>
-+
-+  <footer class="footer" aria-labelledby="footer-title">
-+    <div class="container footer__inner">
-+      <div class="footer__brand">
-+        <h2 class="footer__title" id="footer-title">{{CLINIC_NAME}}</h2>
-+        <p class="footer__info">所在地：{{ADDRESS}}</p>
-+        <p class="footer__info">電話：<a href="tel:{{PHONE_NUMBER_DIGITS}}">{{PHONE_NUMBER}}</a></p>
-+        <p class="footer__info">代表者：{{DIRECTOR_NAME}}</p>
-+      </div>
-+      <div class="footer__links">
-+        <h3 class="footer__heading">主要リンク</h3>
-+        <ul>
-+          <li><a href="#services">診療案内</a></li>
-+          <li><a href="#prices">料金について</a></li>
-+          <li><a href="#access">アクセス</a></li>
-+          <li><a href="#privacy">プライバシーポリシー</a></li>
-+        </ul>
-+      </div>
-+      <div class="footer__cta">
-+        <a class="btn btn--primary btn--block" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約</a>
-+        <a class="btn btn--secondary btn--block" href="tel:{{PHONE_NUMBER_DIGITS}}">電話で相談</a>
-+        <a class="btn btn--ghost btn--block" href="#contact">WEB問合せフォームへ</a>
-+      </div>
-+    </div>
-+    <p class="footer__copyright">&copy; {{CURRENT_YEAR}} {{CLINIC_NAME}} All rights reserved. 最終更新日：{{LAST_UPDATED}}</p>
-+  </footer>
-+
-+  <script type="application/ld+json">
-+  {
-+    "@context": "https://schema.org",
-+    "@type": "Dentist",
-+    "name": "{{CLINIC_NAME}}",
-+    "image": "{{CANONICAL_URL}}/assets/img/hero.jpg",
-+    "@id": "{{CANONICAL_URL}}/#dentist",
-+    "url": "{{CANONICAL_URL}}",
-+    "telephone": "{{PHONE_NUMBER}}",
-+    "priceRange": "{{PRICE_RANGE}}",
-+    "address": {
-+      "@type": "PostalAddress",
-+      "streetAddress": "{{ADDRESS_STREET}}",
-+      "addressLocality": "{{ADDRESS_CITY}}",
-+      "addressRegion": "{{ADDRESS_PREF}}",
-+      "postalCode": "{{ADDRESS_ZIP}}",
-+      "addressCountry": "JP"
-+    },
-+    "geo": {
-+      "@type": "GeoCoordinates",
-+      "latitude": {{GEO_LATITUDE}},
-+      "longitude": {{GEO_LONGITUDE}}
-+    },
-+    "openingHoursSpecification": [
-+      {
-+        "@type": "OpeningHoursSpecification",
-+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-+        "opens": "09:00",
-+        "closes": "20:00"
-+      },
-+      {
-+        "@type": "OpeningHoursSpecification",
-+        "dayOfWeek": "Saturday",
-+        "opens": "09:00",
-+        "closes": "17:00"
-+      }
-+    ],
-+    "paymentAccepted": ["現金", "クレジットカード", "交通系IC"],
-+    "sameAs": [
-+      "https://line.me/R/ti/p/@yourclinic"
-+    ],
-+    "hasMap": "{{MAP_URL}}"
-+  }
-+  </script>
-+</body>
-+</html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{CLINIC_NAME}}｜痛みの少ない治療・夜20時まで・{{STATION_NAME}}徒歩{{STATION_TIME}}分｜{{AREA_NAME}}の歯医者</title>
+  <meta name="description" content="平日20時まで診療の{{CLINIC_NAME}}は{{AREA_NAME}}で痛みの少ない治療に注力。滅菌対策とキッズ対応で家族みんなが安心。LINEで24時間予約受付中。">
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{CLINIC_NAME}}｜痛みの少ない治療・夜20時まで">
+  <meta property="og:description" content="{{AREA_NAME}}の歯医者{{CLINIC_NAME}}。痛みの少ない治療・夜20時まで診療・キッズスペース完備。LINEで24時間予約受付中。">
+  <meta property="og:url" content="{{CANONICAL_URL}}">
+  <meta property="og:image" content="{{OG_IMAGE_URL}}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{CLINIC_NAME}}｜痛みの少ない治療・夜20時まで">
+  <meta name="twitter:description" content="{{AREA_NAME}}の歯医者{{CLINIC_NAME}}。痛みの少ない治療・夜20時まで診療・キッズスペース完備。LINEで24時間予約受付中。">
+  <meta name="twitter:image" content="{{OG_IMAGE_URL}}">
+  <meta name="theme-color" content="#2AA7A1">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+  <header class="header" id="top">
+    <div class="header__inner">
+      <a class="header__logo" href="#top">{{CLINIC_NAME}}</a>
+      <div class="header__contact">
+        <a class="header__tel" href="tel:{{PHONE_NUMBER_DIGITS}}">{{PHONE_NUMBER}}</a>
+        <a class="btn btn--primary btn--small" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約</a>
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="ナビゲーションを開閉" />
+      <label class="nav-toggle__label" for="nav-toggle">
+        <span class="nav-toggle__icon" aria-hidden="true"></span>
+        <span class="sr-only">メニューを開閉</span>
+      </label>
+      <nav class="nav" id="global-nav" aria-label="メインメニュー">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#about">選ばれる理由</a></li>
+          <li class="nav__item"><a href="#services">診療案内</a></li>
+          <li class="nav__item"><a href="#prices">料金</a></li>
+          <li class="nav__item"><a href="#doctors">医師紹介</a></li>
+          <li class="nav__item"><a href="#voices">患者さまの声</a></li>
+          <li class="nav__item"><a href="#faq">よくある質問</a></li>
+          <li class="nav__item"><a href="#access">アクセス</a></li>
+          <li class="nav__item"><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <p class="hero__tagline">“痛みの少ない” に本気です。</p>
+          <h1 class="hero__title" id="hero-title">痛みの少ない治療で、通いやすく。{{CLINIC_NAME}}</h1>
+          <p class="hero__subtitle">平日20時まで／土曜診療／キッズスペースあり／急患対応</p>
+          <div class="hero__ctas">
+            <a class="btn btn--primary" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約（24時間OK）</a>
+            <a class="btn btn--secondary" href="tel:{{PHONE_NUMBER_DIGITS}}">電話で相談</a>
+          </div>
+          <ul class="hero__benefits" aria-label="受診するメリット">
+            <li class="hero__benefit">痛みの少ない治療</li>
+            <li class="hero__benefit">短時間＆待ち時間に配慮</li>
+            <li class="hero__benefit">徹底した衛生管理</li>
+          </ul>
+        </div>
+        <div class="hero__media">
+          <img class="hero__image" src="./assets/img/hero.jpg" alt="明るい院内の受付カウンター" loading="lazy">
+          <div class="hero__qr">
+            <img src="./assets/img/line-qr.png" alt="LINE予約用QRコード" loading="lazy">
+            <p class="hero__qr-text">スマホで簡単予約</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-block" aria-labelledby="cta-block-title">
+      <div class="container">
+        <h2 class="section__title" id="cta-block-title">今すぐLINEで24時間予約受付中</h2>
+        <p class="section__lead">初診も再診も、24時間いつでもLINEからかんたん予約。チャットで事前相談も承ります。</p>
+        <a class="btn btn--primary btn--large" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約（24時間OK）</a>
+      </div>
+    </section>
+
+    <section class="section section--about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 class="section__title" id="about-title">{{CLINIC_NAME}}が選ばれる6つの理由</h2>
+        <div class="features">
+          <article class="feature">
+            <h3 class="feature__title">痛みの少ない治療に注力</h3>
+            <p class="feature__text">表面麻酔や電動麻酔器などを活用し、痛みの少ない治療を実現。恐怖心の強い方も安心して通院いただけます。</p>
+          </article>
+          <article class="feature">
+            <h3 class="feature__title">ていねいなカウンセリング</h3>
+            <p class="feature__text">口腔内カメラや資料を使ったわかりやすい説明で、治療前後の不安を丁寧に解消いたします。</p>
+          </article>
+          <article class="feature">
+            <h3 class="feature__title">通いやすい立地・時間</h3>
+            <p class="feature__text">{{STATION_NAME}}から徒歩{{STATION_TIME}}分、平日20時まで・土曜診療で、お仕事帰りや学校帰りでも通いやすい環境です。</p>
+          </article>
+          <article class="feature">
+            <h3 class="feature__title">滅菌・衛生管理の徹底</h3>
+            <p class="feature__text">クラスB滅菌器や医療用空気清浄機を導入し、治療器具は患者さまごとに徹底滅菌しています。</p>
+          </article>
+          <article class="feature">
+            <h3 class="feature__title">キッズ・ファミリー歓迎</h3>
+            <p class="feature__text">キッズスペース完備で、ベビーカーでもそのまま入れるバリアフリー設計。親子で安心して通院いただけます。</p>
+          </article>
+          <article class="feature">
+            <h3 class="feature__title">保険診療中心で費用が明確</h3>
+            <p class="feature__text">保険診療を中心に、費用は事前に明確化。自費診療もお見積りとお支払い方法をご案内します。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <h2 class="section__title" id="services-title">診療メニュー</h2>
+        <div class="cards cards--services">
+          <article class="card card--service">
+            <h3 class="card__title">一般歯科</h3>
+            <p class="card__text">むし歯・歯周病の治療や根管治療など、痛みを抑えた丁寧な処置を行います。</p>
+            <p class="card__meta">保険適用／費用目安：{{PRICE_GENERAL}}</p>
+            <a class="btn btn--primary btn--block" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約</a>
+          </article>
+          <article class="card card--service">
+            <h3 class="card__title">予防歯科</h3>
+            <p class="card__text">定期検診、クリーニング、フッ素塗布でむし歯・歯周病の予防をサポートします。</p>
+            <p class="card__meta">保険適用／費用目安：{{PRICE_PREVENTIVE}}</p>
+            <a class="btn btn--primary btn--block" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約</a>
+          </article>
+          <article class="card card--service">
+            <h3 class="card__title">小児歯科</h3>
+            <p class="card__text">お子さまの歯の健康を守るための予防・治療を、怖くない工夫で進めます。</p>
+            <p class="card__meta">保険適用／費用目安：{{PRICE_PEDIATRIC}}</p>
+            <a class="btn btn--primary btn--block" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約</a>
+          </article>
+          <article class="card card--service">
+            <h3 class="card__title">矯正歯科</h3>
+            <p class="card__text">ワイヤー・マウスピース矯正に対応し、ライフスタイルに合わせたプランをご提案。</p>
+            <p class="card__meta">自費診療／費用目安：{{PRICE_ORTHO}}</p>
+            <a class="btn btn--primary btn--block" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約</a>
+          </article>
+          <article class="card card--service">
+            <h3 class="card__title">口腔外科</h3>
+            <p class="card__text">親知らずの抜歯や顎関節症など、専門的な処置にも対応しています。</p>
+            <p class="card__meta">保険・自費／費用目安：{{PRICE_ORAL_SURGERY}}</p>
+            <a class="btn btn--primary btn--block" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約</a>
+          </article>
+          <article class="card card--service">
+            <h3 class="card__title">インプラント</h3>
+            <p class="card__text">CT診断に基づく安全なインプラント治療で、しっかり噛める毎日を実現。</p>
+            <p class="card__meta">自費診療／費用目安：{{PRICE_IMPLANT}}</p>
+            <a class="btn btn--primary btn--block" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約</a>
+          </article>
+          <article class="card card--service">
+            <h3 class="card__title">審美・ホワイトニング</h3>
+            <p class="card__text">ホワイトニングやセラミック治療で、自然で美しい口元をサポートします。</p>
+            <p class="card__meta">自費診療／費用目安：{{PRICE_ESTHETIC}}</p>
+            <a class="btn btn--primary btn--block" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--prices" id="prices" aria-labelledby="prices-title">
+      <div class="container">
+        <h2 class="section__title" id="prices-title">料金・保険について</h2>
+        <div class="price-table">
+          <table>
+            <caption>保険診療の費用目安（税込）</caption>
+            <thead>
+              <tr>
+                <th scope="col">項目</th>
+                <th scope="col">内容</th>
+                <th scope="col">目安料金</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">初診料</th>
+                <td>初回カウンセリング・検査</td>
+                <td>{{PRICE_FIRST_VISIT}}</td>
+              </tr>
+              <tr>
+                <th scope="row">再診料</th>
+                <td>経過確認・応急処置</td>
+                <td>{{PRICE_FOLLOW_UP}}</td>
+              </tr>
+              <tr>
+                <th scope="row">スケーリング</th>
+                <td>歯石除去・クリーニング</td>
+                <td>{{PRICE_SCALING}}</td>
+              </tr>
+              <tr>
+                <th scope="row">レントゲン</th>
+                <td>デジタルレントゲン撮影</td>
+                <td>{{PRICE_XRAY}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <details class="price-details">
+          <summary>自費診療の料金目安を開く</summary>
+          <ul class="price-details__list">
+            <li>ホワイトニング（片顎）：{{PRICE_WHITENING}}</li>
+            <li>セラミッククラウン：{{PRICE_CERAMIC}}</li>
+            <li>インプラント（1本）：{{PRICE_IMPLANT_DETAIL}}</li>
+            <li>マウスピース矯正：{{PRICE_ALIGNER}}</li>
+          </ul>
+        </details>
+        <p class="price-note">※費用は症状や材料により異なります。詳しくは事前にお見積りをご案内します。</p>
+      </div>
+    </section>
+
+    <section class="section section--facility" id="facility" aria-labelledby="facility-title">
+      <div class="container">
+        <h2 class="section__title" id="facility-title">院内設備・衛生管理</h2>
+        <div class="facility-grid">
+          <article class="facility-item">
+            <h3 class="facility-item__title">滅菌体制</h3>
+            <p class="facility-item__text">クラスB滅菌器、ハンドピース専用滅菌器、口腔外バキュームを導入。器具は患者さまごとに個別包装しています。</p>
+          </article>
+          <article class="facility-item">
+            <h3 class="facility-item__title">使い捨て用品の徹底</h3>
+            <p class="facility-item__text">エプロン・コップ・グローブなどは使い捨てを徹底し、院内感染防止に努めています。</p>
+          </article>
+          <article class="facility-item">
+            <h3 class="facility-item__title">院内環境</h3>
+            <p class="facility-item__text">定期的な換気と清掃、医療用空気清浄機でクリーンな空間を保ちます。バリアフリーでベビーカーもOK。</p>
+          </article>
+          <article class="facility-item">
+            <h3 class="facility-item__title">キッズスペース</h3>
+            <p class="facility-item__text">絵本やおもちゃを備えたキッズスペースを完備し、待ち時間も楽しくお過ごしいただけます。</p>
+          </article>
+          <article class="facility-item">
+            <h3 class="facility-item__title">個室診療</h3>
+            <p class="facility-item__text">プライバシーに配慮した半個室・個室診療室で、周囲を気にせず治療に集中できます。</p>
+          </article>
+          <article class="facility-item">
+            <h3 class="facility-item__title">バリアフリー対応</h3>
+            <p class="facility-item__text">院内は段差をなくし、車いすやご高齢の方も安心してお越しいただけます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--doctors" id="doctors" aria-labelledby="doctors-title">
+      <div class="container">
+        <h2 class="section__title" id="doctors-title">医師・スタッフ紹介</h2>
+        <div class="doctor">
+          <div class="doctor__media">
+          <img src="./assets/img/staff-1.jpg" alt="患者さまへ説明を行う院長の写真" loading="lazy">
+          </div>
+          <div class="doctor__content">
+            <h3 class="doctor__name">院長 {{DIRECTOR_NAME}}</h3>
+            <p class="doctor__profile">{{DIRECTOR_NAME}}は{{UNIVERSITY_NAME}}歯学部卒業後、総合病院歯科口腔外科や都内クリニックにて研鑽を積み、{{YEAR_ESTABLISHED}}年に{{CLINIC_NAME}}を開院。痛みの少ない治療とライフスタイルに寄り添うケアを大切にしています。</p>
+            <p class="doctor__affiliation">所属学会：日本歯科医師会／日本口腔外科学会／日本小児歯科学会</p>
+            <p class="doctor__specialty">得意領域：無痛治療、予防歯科、インプラント、審美治療</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--voices" id="voices" aria-labelledby="voices-title">
+      <div class="container">
+        <h2 class="section__title" id="voices-title">患者さまの声</h2>
+        <p class="section__note">※個人の感想であり、効果には個人差があります。</p>
+        <div class="voices">
+          <article class="voice">
+            <h3 class="voice__title">30代 女性</h3>
+            <p class="voice__rating" aria-label="星5つ中5">★★★★★</p>
+            <p class="voice__excerpt">麻酔の痛みがほとんどなく、説明も丁寧で安心して治療を受けられました。</p>
+            <details class="voice__details">
+              <summary>詳しく読む</summary>
+              <p>忙しい仕事の合間でも通いやすい診療時間で助かっています。治療計画や費用も事前に説明があり、納得して進めることができました。</p>
+            </details>
+          </article>
+          <article class="voice">
+            <h3 class="voice__title">40代 男性</h3>
+            <p class="voice__rating" aria-label="星5つ中4">★★★★☆</p>
+            <p class="voice__excerpt">院内が清潔で、治療中もこまめに声かけしてくれるので安心できます。</p>
+            <details class="voice__details">
+              <summary>詳しく読む</summary>
+              <p>夜20時まで診療しているので、仕事帰りにも通える点が良いです。LINEで予約できるので待ち時間も少なくて快適です。</p>
+            </details>
+          </article>
+          <article class="voice">
+            <h3 class="voice__title">20代 女性</h3>
+            <p class="voice__rating" aria-label="星5つ中5">★★★★★</p>
+            <p class="voice__excerpt">ホワイトニングの相談で来院。メリットと注意点をしっかり教えてもらえました。</p>
+            <details class="voice__details">
+              <summary>詳しく読む</summary>
+              <p>キッズスペースがあり、妹とも安心して通えました。白くなった歯をキープできるようアドバイスももらえたので満足です。</p>
+            </details>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--faq" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 class="section__title" id="faq-title">よくある質問</h2>
+        <div class="faq">
+          <details class="faq__item">
+            <summary>治療はどのくらい痛いですか？</summary>
+            <p>表面麻酔や電動麻酔器を使用し、痛みを最小限に抑える取り組みをしています。痛みに不安のある方は遠慮なくご相談ください。</p>
+          </details>
+          <details class="faq__item">
+            <summary>治療時間はどのくらいかかりますか？</summary>
+            <p>内容によりますが、初診は60分程度、再診は30分程度が目安です。ご希望の時間帯があればLINEからご相談ください。</p>
+          </details>
+          <details class="faq__item">
+            <summary>費用が心配です。見積りはもらえますか？</summary>
+            <p>保険診療・自費診療ともに、治療前に費用の目安と支払い方法をご案内します。分割払いにも対応可能です。</p>
+          </details>
+          <details class="faq__item">
+            <summary>保険証を忘れた場合はどうなりますか？</summary>
+            <p>一時的に自費扱いとなりますが、後日保険証をご提示いただければ差額をご返金いたします。</p>
+          </details>
+          <details class="faq__item">
+            <summary>子どもを連れて行っても大丈夫ですか？</summary>
+            <p>キッズスペースを完備し、ベビーカーのまま診療室に入れるバリアフリー設計です。ご家族皆さまでお越しください。</p>
+          </details>
+          <details class="faq__item">
+            <summary>急患にも対応していますか？</summary>
+            <p>急な痛みやトラブルにも可能な限り対応いたします。まずはお電話またはLINEでご連絡ください。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--access" id="access" aria-labelledby="access-title">
+      <div class="container">
+        <h2 class="section__title" id="access-title">アクセス・診療時間</h2>
+        <div class="access">
+          <div class="access__info">
+            <p class="access__address">住所：{{ADDRESS}}</p>
+            <p class="access__transport">最寄り：{{STATION_NAME}}徒歩{{STATION_TIME}}分／{{BUS_INFO}}／駐車場{{PARKING_INFO}}</p>
+            <a class="btn btn--primary" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約（24時間OK）</a>
+            <a class="btn btn--secondary" href="tel:{{PHONE_NUMBER_DIGITS}}">電話で相談</a>
+            <div class="access__qr">
+              <img src="./assets/img/line-qr.png" alt="LINE予約用QRコード" loading="lazy">
+              <p>スマホから友だち追加</p>
+            </div>
+          </div>
+          <div class="access__map">
+            <img src="./assets/img/map.png" alt="{{CLINIC_NAME}}周辺地図のイメージ" loading="lazy">
+          </div>
+        </div>
+        <div class="timetable">
+          <table>
+            <caption>診療時間</caption>
+            <thead>
+              <tr>
+                <th scope="col">曜日</th>
+                <th scope="col">午前</th>
+                <th scope="col">午後</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">月</th>
+                <td>09:00〜13:00</td>
+                <td>14:30〜20:00</td>
+              </tr>
+              <tr>
+                <th scope="row">火</th>
+                <td>09:00〜13:00</td>
+                <td>14:30〜20:00</td>
+              </tr>
+              <tr>
+                <th scope="row">水</th>
+                <td>09:00〜13:00</td>
+                <td>14:30〜20:00</td>
+              </tr>
+              <tr>
+                <th scope="row">木</th>
+                <td>09:00〜13:00</td>
+                <td>14:30〜20:00</td>
+              </tr>
+              <tr>
+                <th scope="row">金</th>
+                <td>09:00〜13:00</td>
+                <td>14:30〜20:00</td>
+              </tr>
+              <tr>
+                <th scope="row">土</th>
+                <td>09:00〜13:00</td>
+                <td>14:00〜17:00</td>
+              </tr>
+              <tr class="timetable__holiday">
+                <th scope="row">日・祝</th>
+                <td colspan="2">休診</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 class="section__title" id="contact-title">お問い合わせ（WEBフォーム）</h2>
+        <p class="section__lead">以下のフォームからもご相談を受け付けています。確認のため、必須項目のご入力をお願いします。</p>
+        <form class="form" action="mailto:info@yourclinic.jp" method="post">
+          <div class="form__group">
+            <label for="contact-name">お名前 <span class="form__required" aria-hidden="true">必須</span></label>
+            <input id="contact-name" name="name" type="text" required>
+          </div>
+          <div class="form__group">
+            <label for="contact-email">メールアドレス <span class="form__required" aria-hidden="true">必須</span></label>
+            <input id="contact-email" name="email" type="email" required>
+          </div>
+          <div class="form__group">
+            <label for="contact-phone">電話番号 <span class="form__required" aria-hidden="true">必須</span></label>
+            <input id="contact-phone" name="phone" type="tel" inputmode="tel" required>
+          </div>
+          <div class="form__group">
+            <label for="contact-message">お問い合わせ内容 <span class="form__required" aria-hidden="true">必須</span></label>
+            <textarea id="contact-message" name="message" rows="5" required></textarea>
+          </div>
+          <div class="form__group form__group--checkbox">
+            <input id="contact-consent" name="consent" type="checkbox" required>
+            <label for="contact-consent">個人情報の取り扱いに同意します（<a href="#privacy">プライバシーポリシー</a>）</label>
+          </div>
+          <button class="btn btn--primary btn--large" type="submit">WEB問合せを送信</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section--privacy" id="privacy" aria-labelledby="privacy-title">
+      <div class="container">
+        <h2 class="section__title" id="privacy-title">プライバシーポリシー</h2>
+        <p>{{CLINIC_NAME}}（以下、「当院」といいます。）は、個人情報保護法および関連法令を遵守し、患者さまの個人情報を適切に管理いたします。取得した情報は診療およびお問い合わせ対応の目的以外には利用いたしません。</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="cta-fixed" role="complementary" aria-label="固定の予約案内">
+    <a class="btn btn--primary" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約（24時間OK）</a>
+    <a class="btn btn--secondary" href="tel:{{PHONE_NUMBER_DIGITS}}">電話で相談</a>
+  </div>
+
+  <footer class="footer" aria-labelledby="footer-title">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <h2 class="footer__title" id="footer-title">{{CLINIC_NAME}}</h2>
+        <p class="footer__info">所在地：{{ADDRESS}}</p>
+        <p class="footer__info">電話：<a href="tel:{{PHONE_NUMBER_DIGITS}}">{{PHONE_NUMBER}}</a></p>
+        <p class="footer__info">代表者：{{DIRECTOR_NAME}}</p>
+      </div>
+      <div class="footer__links">
+        <h3 class="footer__heading">主要リンク</h3>
+        <ul>
+          <li><a href="#services">診療案内</a></li>
+          <li><a href="#prices">料金について</a></li>
+          <li><a href="#access">アクセス</a></li>
+          <li><a href="#privacy">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+      <div class="footer__cta">
+        <a class="btn btn--primary btn--block" href="https://line.me/R/ti/p/@yourclinic" target="_blank" rel="noopener">LINEで予約</a>
+        <a class="btn btn--secondary btn--block" href="tel:{{PHONE_NUMBER_DIGITS}}">電話で相談</a>
+        <a class="btn btn--ghost btn--block" href="#contact">WEB問合せフォームへ</a>
+      </div>
+    </div>
+    <p class="footer__copyright">&copy; {{CURRENT_YEAR}} {{CLINIC_NAME}} All rights reserved. 最終更新日：{{LAST_UPDATED}}</p>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "{{CLINIC_NAME}}",
+    "image": "{{CANONICAL_URL}}/assets/img/hero.jpg",
+    "@id": "{{CANONICAL_URL}}/#dentist",
+    "url": "{{CANONICAL_URL}}",
+    "telephone": "{{PHONE_NUMBER}}",
+    "priceRange": "{{PRICE_RANGE}}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ADDRESS_STREET}}",
+      "addressLocality": "{{ADDRESS_CITY}}",
+      "addressRegion": "{{ADDRESS_PREF}}",
+      "postalCode": "{{ADDRESS_ZIP}}",
+      "addressCountry": "JP"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": {{GEO_LATITUDE}},
+      "longitude": {{GEO_LONGITUDE}}
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ],
+    "paymentAccepted": ["現金", "クレジットカード", "交通系IC"],
+    "sameAs": [
+      "https://line.me/R/ti/p/@yourclinic"
+    ],
+    "hasMap": "{{MAP_URL}}"
+  }
+  </script>
+</body>
+</html>
